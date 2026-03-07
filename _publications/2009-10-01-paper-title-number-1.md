@@ -2,7 +2,7 @@
 title: 'Distributed Prescribed-Time Formation Control of Heterogeneous T–S Fuzzy Multiagent Systems: A Hierarchical Design Approach'
 collection: publications
 category: manuscripts
-permalink: [online](https://ieeexplore.ieee.org/document/10684458)
+permalink: https://ieeexplore.ieee.org/document/10684458
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2024-09-19
 venue: 'IEEE TRANSACTIONS ON FUZZY SYSTEMS'
