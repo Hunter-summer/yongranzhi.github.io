@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Yongran Zhi / Welcome to Zhi's Personal Homepage"
+title                    : "Welcome to Zhi's Personal Homepage"
 title_separator          : "-"
 name                     : &name "Yongran Zhi"
 description              : &description "I'm a sunshine boy."   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -23,7 +23,7 @@ repository               : "Hunter-summer/yongranzhi.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "zyr.png"
   name             : "Yongran Zhi"
   pronouns         : # example: "she/her"  
   bio              : "I'm a sunshine boy."
@@ -35,17 +35,17 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com.hk/citations?hl=zh-CN&pli=1&user=lUVD2egAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
-  semantic         : # URL
+  orcid            : "https://orcid.org/0000-0003-4521-7900"
+  semantic         : "https://www.semanticscholar.org/author/Yongran-Zhi/2164571270"
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
-  scopus           : # URL
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  researchgate     : "https://www.researchgate.net/profile/Yongran-Zhi"
+  scopus           : "https://www.scopus.com/authid/detail.uri?authorId=57667409500"
   zotero           : # URL
-
+  IEEE             : "https://ieeexplore.ieee.org/author/37089999148"
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
@@ -57,7 +57,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
