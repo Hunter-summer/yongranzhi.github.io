@@ -1,14 +1,10 @@
 ---
-title: "Paper Title Number 2"
+title: "Adversarial Leader–Follower Formation Tracking Control of UAVs Against GNSS Spoofing Attacks"
 collection: publications
 category: manuscripts
 permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
-slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
-paperurl: 'https://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+excerpt: 'This article addresses the adversarial leader–follower formation tracking control problem of multiple unmanned aerial vehicles (UAVs) systems (MUSs) via a constrained multiplayer nonzero-sum differential game (MNSG) framework. In the scenario, follower UAVs execute optimal control inputs intending to surround the leader within a predesigned geometry shape, while the leader UAV performs an adversarial input depending on the followers’ state information, with the objective of evading the formation tracking by followers. In addition, to enhance the likelihood of escaping tracking, the leader UAV is normally outfitted with a global navigation satellite system (GNSS) spoofing module capable of tampering the GNSS signals of followers, which is malicious to the formation tracking. To overcome these challenges, we first reformulate the problem as a constrained MNSG framework with an adversarial and malicious leader. Game-based optimal control policies are initially proposed to track the leader with an adversarial input. In addition, an event-based signal detection and switching mechanism is designed to detect the occurrence of attack and derive the accurate position data utilizing the sampling data. Then, a secure state estimator is developed to guarantee the continuous estimation of the follower’s actual states. Meanwhile, a dynamic ETM is designed to avoid redundant control updates and unnecessary data transmissions, and single critic neural networks are constructed to approximate the optimal control policies, which constitute to the Nash equilibrium. The stability of the closed-loop systems is proved via Lyapunov’s direct method in the sense of uniform ultimate boundedness. The effectiveness of the proposed methods is validated through both simulation and experiment studies.'
+date: 2026-02-27
+venue: 'IEEE Transactions on Industrial Informatics'
+paperurl: 'https://ieeexplore.ieee.org/document/10684458'
 ---
-
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
