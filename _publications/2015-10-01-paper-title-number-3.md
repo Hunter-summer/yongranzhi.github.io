@@ -1,5 +1,5 @@
 ---
-title: "Distributed robust adaptive formation control of fixed-wing UAVs with unknown uncertainties and disturbances"
+title: "Distributed robust adaptive formation control of fixed wing UAVs with unknown uncertainties and disturbances"
 collection: publications
 category: manuscripts
 permalink: /publication/2015-10-01-paper-title-number-3
