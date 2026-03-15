@@ -1,20 +1,10 @@
 ---
-title: "Teaching experience 2"
+title: "Stage of doctoral candidate: 2020.9 ~ Now"
 collection: teaching
-type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
+type: "Bachelor"
+permalink: /teaching/2014-spring-teaching-1
+venue: "Huazhong University of Science and Technology, School of Artificial Intelligence And Automation"
+date: 2026-03-15
+location: "Wuhan, China"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
