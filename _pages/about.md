@@ -8,3 +8,5 @@ redirect_from:
 ---
 
 I am currently working toward the Ph.D. degree in control science and engineering with the Huazhong University of Science and Technology, Wuhan, China., My research interests include formation control, adaptive control, and flight control systems.
+
+[IEEE]([mailto:XX@stu.pku.edu.cn](https://ieeexplore.ieee.org/author/37089999148)) / [Github]([https://github.com/QiuDi233](https://github.com/Hunter-summer?tab=repositories))
