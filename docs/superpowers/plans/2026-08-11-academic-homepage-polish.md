@@ -4,7 +4,7 @@
 
 **Goal:** Improve the existing English Academic Pages site without redesigning it, then publish a correct, searchable GitHub Pages build.
 
-**Architecture:** Keep the current Jekyll theme and collections. Limit changes to site identity in `_config.yml`, homepage copy in `_pages/about.md`, navigation in `_data/navigation.yml`, and clearly malformed academic records. Add a focused Ruby validation script so configuration, links, navigation, YAML front matter, and template-remnant rules remain testable.
+**Architecture:** Keep the current Jekyll theme and collections. Limit changes to site identity in `_config.yml`, homepage copy in `_pages/about.md`, navigation in `_data/navigation.yml`, and clearly malformed academic records. Add a focused Python validation script so configuration, links, navigation, YAML front matter, and template-remnant rules remain testable.
 
 **Tech Stack:** Jekyll, Liquid, Markdown, YAML, Python standard library, GitHub Pages
 
