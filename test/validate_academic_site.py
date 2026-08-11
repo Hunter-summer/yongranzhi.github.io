@@ -37,6 +37,7 @@ collection_files += list((ROOT / "_talks").glob("*.md"))
 collection_files += list((ROOT / "_teaching").glob("*.md"))
 
 permalink_owners: dict[str, Path] = {}
+paperurl_owners: dict[str, Path] = {}
 for path in collection_files:
     text = path.read_text(encoding="utf-8")
     require(text.startswith("---\n") or text.startswith("---\r\n"),
@@ -54,6 +55,16 @@ for path in collection_files:
             )
         else:
             permalink_owners[permalink] = path
+    paperurl_match = re.search(r"^paperurl:\s*['\"]([^'\"]+)['\"]\s*$", text, re.M)
+    if paperurl_match:
+        paperurl = paperurl_match.group(1)
+        if paperurl in paperurl_owners:
+            failures.append(
+                f"duplicate paper URL {paperurl}: {paperurl_owners[paperurl].relative_to(ROOT)} and {path.relative_to(ROOT)}"
+            )
+        else:
+            paperurl_owners[paperurl] = path
+    require("43nd" not in text, f"{path.relative_to(ROOT)} contains the ordinal typo 43nd")
 
 if failures:
     print("Academic site validation failed:")
