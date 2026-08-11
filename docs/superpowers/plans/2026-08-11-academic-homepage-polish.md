@@ -6,7 +6,7 @@
 
 **Architecture:** Keep the current Jekyll theme and collections. Limit changes to site identity in `_config.yml`, homepage copy in `_pages/about.md`, navigation in `_data/navigation.yml`, and clearly malformed academic records. Add a focused Ruby validation script so configuration, links, navigation, YAML front matter, and template-remnant rules remain testable.
 
-**Tech Stack:** Jekyll, Liquid, Markdown, YAML, Ruby standard library, GitHub Pages
+**Tech Stack:** Jekyll, Liquid, Markdown, YAML, Python standard library, GitHub Pages
 
 ## Global Constraints
 
@@ -21,8 +21,8 @@
 ### Task 1: Add regression validation for visible site identity
 
 **Files:**
-- Create: `test/validate_academic_site.rb`
-- Test: `test/validate_academic_site.rb`
+- Create: `test/validate_academic_site.py`
+- Test: `test/validate_academic_site.py`
 
 **Interfaces:**
 - Consumes: `_config.yml`, `_pages/about.md`, `_data/navigation.yml`, collection Markdown files.
@@ -34,7 +34,7 @@ Create assertions that require the canonical URL/base URL, `Hunter-summer` as th
 
 - [ ] **Step 2: Run it to verify failure**
 
-Run: `ruby test/validate_academic_site.rb`
+Run: `python test/validate_academic_site.py`
 
 Expected: non-zero status listing the current URL, GitHub username, description, Guide link, homepage-link, duplicate-permalink, and mojibake failures.
 
@@ -43,7 +43,7 @@ Expected: non-zero status listing the current URL, GitHub username, description,
 Run:
 
 ```bash
-git add test/validate_academic_site.rb
+git add test/validate_academic_site.py
 git commit -m "test: validate academic site metadata"
 ```
 
@@ -53,7 +53,7 @@ git commit -m "test: validate academic site metadata"
 - Modify: `_config.yml`
 - Modify: `_pages/about.md`
 - Modify: `_data/navigation.yml`
-- Test: `test/validate_academic_site.rb`
+- Test: `test/validate_academic_site.py`
 
 **Interfaces:**
 - Consumes: current verified academic profile links already present in `_config.yml`.
@@ -73,7 +73,7 @@ Keep Publications, Talks, and Education. Enable CV only if `_pages/cv.md` no lon
 
 - [ ] **Step 4: Run the focused validation**
 
-Run: `ruby test/validate_academic_site.rb`
+Run: `python test/validate_academic_site.py`
 
 Expected: remaining failures are limited to malformed collection records handled in Task 3.
 
@@ -93,7 +93,7 @@ git commit -m "fix: polish academic site identity and navigation"
 - Modify: `_publications/2010-10-01-paper-title-number-2.md`
 - Modify: `_talks/2014-03-01-talk-3.md`
 - Modify: `_teaching/2015-spring-teaching-2.md`
-- Test: `test/validate_academic_site.rb`
+- Test: `test/validate_academic_site.py`
 
 **Interfaces:**
 - Consumes: existing record titles, venues, dates, and URLs.
@@ -109,7 +109,7 @@ Give the doctoral entry the unique permalink `/teaching/2015-spring-teaching-2` 
 
 - [ ] **Step 3: Run the focused validation**
 
-Run: `ruby test/validate_academic_site.rb`
+Run: `python test/validate_academic_site.py`
 
 Expected: PASS with a summary naming all checked files.
 
@@ -118,7 +118,7 @@ Expected: PASS with a summary naming all checked files.
 Run:
 
 ```bash
-git add _publications _talks _teaching test/validate_academic_site.rb
+git add _publications _talks _teaching test/validate_academic_site.py
 git commit -m "fix: repair academic record metadata"
 ```
 
@@ -153,7 +153,7 @@ Confirm the canonical URL uses `https://hunter-summer.github.io/yongranzhi.githu
 Run:
 
 ```bash
-ruby test/validate_academic_site.rb
+python test/validate_academic_site.py
 bundle exec jekyll build --trace
 git diff --check master...HEAD
 ```
@@ -163,4 +163,3 @@ Expected: all commands exit 0.
 - [ ] **Step 5: Publish the branch and open a pull request**
 
 Push `codex/academic-homepage-polish`, open a pull request into `master`, verify GitHub Pages checks, then merge after checks pass. Confirm the deployed site and `/sitemap.xml` respond publicly. Search-engine indexing may take days or weeks after publication.
-
