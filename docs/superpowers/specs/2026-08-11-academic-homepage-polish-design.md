@@ -1,6 +1,6 @@
 # Academic Homepage Polish Design
 
-Date: 2026-08-11  
+Date: 2026-08-11
 Repository: `Hunter-summer/yongranzhi.github.io`
 
 ## Goal
