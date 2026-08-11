@@ -1,12 +1,14 @@
 ---
 permalink: /
-title: "Hello!"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am currently working toward the Ph.D. degree in control science and engineering with the Huazhong University of Science and Technology, Wuhan, China., My research interests include formation control, adaptive control, and flight control systems.
+I am a Ph.D. researcher in Control Science and Engineering at Huazhong University of Science and Technology (HUST) in Wuhan, China.
 
-[IEEE]([mailto:XX@stu.pku.edu.cn](https://ieeexplore.ieee.org/author/37089999148)) / [Github]([https://github.com/QiuDi233](https://github.com/Hunter-summer?tab=repositories))
+My research interests include formation control, adaptive control, resilient multi-agent systems, and flight control systems.
+
+[Publications]({{ base_path }}/publications/) · [Google Scholar](https://scholar.google.com.hk/citations?hl=zh-CN&pli=1&user=lUVD2egAAAAJ) · [ORCID](https://orcid.org/0000-0003-4521-7900) · [IEEE](https://ieeexplore.ieee.org/author/37089999148) · [GitHub](https://github.com/Hunter-summer)
