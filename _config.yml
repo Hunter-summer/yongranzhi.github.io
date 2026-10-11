@@ -10,7 +10,7 @@
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Yongran Zhi"
-title_separator          : "|"
+title_separator          : "—"
 name                     : &name "Yongran Zhi"
 description              : &description "Academic CV of Yongran Zhi, a Ph.D. researcher at Huazhong University of Science and Technology working on formation control, resilient multi-agent systems, adaptive control, and flight control."
 url                      : "https://hunter-summer.github.io"
