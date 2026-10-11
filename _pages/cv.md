@@ -1,7 +1,9 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
+description: "Curriculum vitae of Yongran Zhi, including education, research interests, publications, and conference presentations."
+keywords: "Yongran Zhi CV, Carlton Zhi CV, control science, HUST, publications"
 author_profile: true
 redirect_from:
   - /resume
@@ -9,56 +11,40 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Profile
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+Yongran Zhi (Carlton Zhi) is a Ph.D. researcher in Control Science and Engineering at Huazhong University of Science and Technology. His research interests include formation control, resilient multi-agent systems, adaptive and event-triggered control, and flight control systems.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+## Education
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+- **Ph.D. in Control Science and Engineering**, Huazhong University of Science and Technology, School of Artificial Intelligence and Automation, 2020–present
+- **Bachelor's study**, Zhengzhou University, School of Electrical and Information Engineering, 2016–2020
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## Research interests
+
+- Formation control of heterogeneous multi-agent systems
+- Resilient control under deception, spoofing, and false-data-injection attacks
+- Adaptive, prescribed-time, event-triggered, and fault-tolerant control
+- Flight control of fixed-wing and flying-wing unmanned aerial vehicles
+
+## Publications
+
+{% assign publications = site.publications | sort: "date" | reverse %}
+<ol>
+{% for publication in publications %}
+  <li><a href="{{ publication.paperurl }}">{{ publication.title }}</a>. <em>{{ publication.venue }}</em>, {{ publication.date | date: "%Y" }}.</li>
+{% endfor %}
+</ol>
+
+## Conference presentations
+
+{% assign talks = site.talks | sort: "date" | reverse %}
+<ul>
+{% for talk in talks %}
+  <li>{{ talk.title }}. <em>{{ talk.venue }}</em>, {{ talk.location }}, {{ talk.date | date: "%Y" }}.</li>
+{% endfor %}
+</ul>
+
+## Academic profiles
+
+[Google Scholar](https://scholar.google.com.hk/citations?hl=zh-CN&pli=1&user=lUVD2egAAAAJ) · [ORCID](https://orcid.org/0000-0003-4521-7900) · [IEEE Author Profile](https://ieeexplore.ieee.org/author/37089999148) · [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57667409500) · [Semantic Scholar](https://www.semanticscholar.org/author/Yongran-Zhi/2164571270)

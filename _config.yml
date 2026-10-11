@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Yongran Zhi | Academic Homepage"
-title_separator          : "-"
+title                    : "Yongran Zhi"
+title_separator          : "|"
 name                     : &name "Yongran Zhi"
-description              : &description "Academic homepage of Yongran Zhi, featuring research on formation control, adaptive control, and flight control systems."
+description              : &description "Academic CV of Yongran Zhi, a Ph.D. researcher at Huazhong University of Science and Technology working on formation control, resilient multi-agent systems, adaptive control, and flight control."
 url                      : "https://hunter-summer.github.io"
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "/yongranzhi.github.io"
@@ -25,8 +25,9 @@ author:
   # Biographic information
   avatar           : "zyr.png"
   name             : "Yongran Zhi"
+  alternate_name   : "Carlton Zhi"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. researcher in control science and engineering."
+  bio              : "Ph.D. researcher in Control Science and Engineering at HUST."
   location         : "Wuhan, China"
   employer         : "HUST"
   uri              : # URL
@@ -143,8 +144,8 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 : "zyr.png"
+og_description           : *description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -159,7 +160,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               : false # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          :
 
@@ -194,6 +195,10 @@ exclude:
   - package.json*
   - Rakefile
   - README
+  - _posts
+  - _portfolio
+  - docs
+  - markdown_generator
   - tmp
   - vendor
 keep_files:
@@ -286,6 +291,8 @@ defaults:
       author_profile: true
       share: true
       comment: true
+      sitemap: false
+      robots: "noindex, nofollow"
   # _talks
   - scope:
       path: ""

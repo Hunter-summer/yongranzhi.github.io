@@ -25,6 +25,9 @@
   {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
 {% endif %}
 <meta name="description" content="{{ seo_description }}">
+<meta name="author" content="{{ site.author.name | default: site.name }}">
+<meta name="robots" content="{{ page.robots | default: 'index, follow, max-image-preview:large' }}">
+{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
 
 {% assign seo_author = page.author | default: page.author[0] | default: site.author[0] %}
 {% if seo_author %}
@@ -89,11 +92,26 @@
 {% if site.social %}
   <script type="application/ld+json">
     {
-      "@context" : "http://schema.org",
-      "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
-      "name" : "{{ site.social.name | default: site.name }}",
-      "url" : {{ seo_url | jsonify }},
-      "sameAs" : {{ site.social.links | jsonify }}
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "name": {{ seo_title | default: site.title | jsonify }},
+      "url": {{ page.url | prepend: seo_url | replace: "/index.html", "/" | jsonify }},
+      "mainEntity": {
+        "@type": "Person",
+        "name": {{ site.social.name | default: site.name | jsonify }},
+        "alternateName": {{ site.author.alternate_name | jsonify }},
+        "url": {{ seo_url | jsonify }},
+        "image": {{ site.author.avatar | prepend: "/images/" | prepend: seo_url | jsonify }},
+        "jobTitle": "Ph.D. Researcher in Control Science and Engineering",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Huazhong University of Science and Technology",
+          "alternateName": "HUST",
+          "url": "https://www.hust.edu.cn/"
+        },
+        "identifier": "https://orcid.org/0000-0003-4521-7900",
+        "sameAs": {{ site.social.links | jsonify }}
+      }
     }
   </script>
 {% endif %}
@@ -116,19 +134,19 @@
 <meta property="og:locale" content="{{ site.locale | default: "en" }}">
 <meta property="og:site_name" content="{{ site.title }}"> 
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
-{% if page.date %}
-  <meta property="og:type" content="article">
-{% endif %}
-{% if page.excerpt %}
-  <meta property="og:description" name="description" content="{{ seo_description }}">
-{% elsif site.og_description %}
-  <meta property="og:description" name="description" content="{{ site.og_description }}">
-{% endif %}
+<meta property="og:type" content="{% if page.date %}article{% else %}profile{% endif %}">
+{% unless page.date %}
+  <meta property="profile:first_name" content="Yongran">
+  <meta property="profile:last_name" content="Zhi">
+{% endunless %}
+<meta property="og:description" content="{{ seo_description }}">
 {% if seo_url %}
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
 {% endif %}
 
 {% if site.og_image %}
+  <meta property="og:image" content="{{ site.og_image | prepend: "/images/" | prepend: base_path }}">
+  <meta property="og:image:alt" content="Portrait of {{ site.author.name | default: site.name }}">
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
