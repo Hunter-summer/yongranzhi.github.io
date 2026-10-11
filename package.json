@@ -1,25 +1,22 @@
 {
-  "name": "academic-pages",
+  "name": "yongran-zhi-academic-cv",
   "version": "0.8.1.1",
-  "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
+  "description": "Academic homepage and curriculum vitae of Yongran Zhi",
   "repository": {
     "type": "git",
-    "url": "https://github.com/academicpages/academicpages.github.io"
+    "url": "https://github.com/Hunter-summer/yongranzhi.github.io"
   },
   "keywords": [
     "jekyll",
-    "theme",
-    "minimal"
+    "academic-cv",
+    "yongran-zhi"
   ],
-  "contributors": [
-    "Michael Rose",
-    "Robert Zupko"
-  ],
+  "contributors": ["Yongran Zhi"],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/academicpages/academicpages.github.io/issues"
+    "url": "https://github.com/Hunter-summer/yongranzhi.github.io/issues"
   },
-  "homepage": "https://github.com/academicpages/academicpages.github.io",
+  "homepage": "https://hunter-summer.github.io/yongranzhi.github.io/",
   "engines": {
     "node": ">= 0.10.0"
   },

@@ -19,6 +19,9 @@ def require(condition: bool, message: str) -> None:
 config = read("_config.yml")
 about = read("_pages/about.md")
 navigation = read("_data/navigation.yml")
+cv = read("_pages/cv.md")
+seo = read("_includes/seo.html")
+readme = read("README.md")
 
 require(re.search(r'^url\s*:\s*"?https://hunter-summer\.github\.io"?\s*$', config, re.M) is not None,
         "_config.yml must use the GitHub Pages host as url")
@@ -31,6 +34,16 @@ require('title: "Guide"' not in navigation, "Guide must be removed from primary 
 require("]([" not in about, "homepage contains malformed nested Markdown links")
 require("Google Scholar" in about and "ORCID" in about and "Publications" in about,
         "homepage must link to core academic profiles and publications")
+require("Version Control Theory" not in cv and "GitHub University" not in cv,
+        "CV must not contain Academic Pages placeholder education")
+require("Yongran Zhi" in cv and "Huazhong University" in cv,
+        "CV must identify Yongran Zhi and HUST")
+require('title: "CV"' in navigation and "url: /cv/" in navigation,
+        "primary navigation must expose the CV")
+require("ProfilePage" in seo and 'meta name="robots"' in seo,
+        "SEO include must provide structured profile data and robots metadata")
+require("Yongran Zhi" in readme and "Academic CV" in readme,
+        "README must describe the repository as Yongran Zhi's academic CV")
 
 collection_files = list((ROOT / "_publications").glob("*.md"))
 collection_files += list((ROOT / "_talks").glob("*.md"))
