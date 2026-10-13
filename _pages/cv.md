@@ -13,7 +13,7 @@ redirect_from:
 
 ## Profile
 
-Yongran Zhi (Carlton Zhi) is a Ph.D. researcher in Control Science and Engineering at Huazhong University of Science and Technology. His research interests include formation control, resilient multi-agent systems, adaptive and event-triggered control, and flight control systems.
+Yongran Zhi (Carlton Zhi) is a postdoctoral research fellow in Control Science and Engineering at Huazhong University of Science and Technology. His research interests include formation control, resilient multi-agent systems, adaptive and event-triggered control, and flight control systems.
 
 ## Education
 
