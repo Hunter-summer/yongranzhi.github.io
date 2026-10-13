@@ -17,8 +17,8 @@ Yongran Zhi (Carlton Zhi) is a Ph.D. researcher in Control Science and Engineeri
 
 ## Education
 
-- **Ph.D. in Control Science and Engineering**, Huazhong University of Science and Technology, School of Artificial Intelligence and Automation, 2020–present
-- **Bachelor's study**, Zhengzhou University, School of Electrical and Information Engineering, 2016–2020
+- **Ph.D. in Control Science and Engineering**, Huazhong University of Science and Technology, School of Artificial Intelligence and Automation, 2020.9–2026.6
+- **Bachelor's study**, Zhengzhou University, School of Electrical and Information Engineering, 2016.9–2020.6
 
 ## Research interests
 
